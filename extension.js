@@ -11,6 +11,9 @@ const vscode = require('vscode');
  * @param {vscode.ExtensionContext} context
  */
 
+function escapeRegex(string) {//在正则保留字符前面加上转义字符： \
+    return string.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+}
 
 // 给待匹配的文本中所有匹配正则表达式的字符串的前面或者后面加字符串的函数
 // re：正则表达式， rp1：要加在前面的字符串， rp2：要加在后面的字符串， str：待匹配的文本
@@ -23,10 +26,12 @@ function RegInsertStr(re, rp1, rp2, str) {
     if (!arr) return str;
 
     for (var i = 0; i < arr.length; i++) {
-        ret = arr[i];
-        rpt = rp1 + arr[i] + rp2;
-        re2 = new RegExp(ret, "ig");
-        str = str.replace(re2, rpt);
+		ret = escapeRegex(arr[i]);//若ret中有保留的字符： ] [ ) ( } { . * + ? ^ $ \ |   则之后re2会无法匹配ret
+								//故使用自己定义的escapeRegex()在ret中可能出现的保留字符前面加上转义字符： \
+		re2 = new RegExp(ret, "g");
+		
+		rpt = rp1 + arr[i] + rp2;
+		str = str.replace(re2, rpt);
     }
     return str;
 }
