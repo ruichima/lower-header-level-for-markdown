@@ -1,6 +1,6 @@
 {
-	"name": "markdown-lower-headers-levels",
-	"displayName": "Markdown Lower Headers Levels",
+	"name": "lower-header-level-for-markdown",
+	"displayName": "lower header level for Markdown",
 	"description": "A tool for making levels of headers lower in Markdown",
 	"version": "1.0.0",
 	"publisher": "ruichima",
@@ -15,19 +15,19 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.markdown_lower_headers_levels"
+		"onCommand:extension.lower_header_level_for_markdown"
 	],
 	"main": "./extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.markdown_lower_headers_levels",
-				"title": "Markdown Lower Headers Levels"
+				"command": "extension.lower_header_level_for_markdown",
+				"title": "lower header level for Markdown"
 			}
 		],
 		"keybindings": [
 			{
-				"command": "extension.markdown_lower_headers_levels",
+				"command": "extension.lower_header_level_for_markdown",
 				"key": "ctrl+shift+3"
 			}
 		]
