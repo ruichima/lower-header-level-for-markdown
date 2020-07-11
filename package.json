@@ -2,7 +2,7 @@
 	"name": "lower-header-level-for-markdown",
 	"displayName": "lower header level for Markdown",
 	"description": "A tool for making levels of headers lower in Markdown",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"publisher": "ruichima",
 	"repository": {
 		"type": "git",

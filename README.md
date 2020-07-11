@@ -24,6 +24,10 @@ https://github.com/ruichima/lower-header-level-for-markdown
 
 ## Release Notes
 
+### 1.0.1
+
+Update README.
+
 ### 1.0.0
 
 Initial release.
