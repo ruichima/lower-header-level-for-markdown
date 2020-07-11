@@ -6,9 +6,8 @@ I used [Academic](https://github.com/gcushen/hugo-academic) to build my personal
 
 ## Features
 
-- Lower the levels of all headers in the selected part of a Markdown file. 
-  <!-- See an example below.
-  ![example]() -->
+- Lower the levels of all headers in the selected part of a Markdown file. See an example below.
+  ![example](./img/features.gif)
 
 ## Install
 
@@ -31,4 +30,4 @@ Initial release.
 
 ## License
 
-MIT
+[MIT](./LICENSE)
