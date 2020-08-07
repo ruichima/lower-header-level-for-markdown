@@ -1,9 +1,18 @@
 # Change Log
 
-All notable changes to the "markdown-lower-headers-levels" extension will be documented in this file.
+## 1.0.3
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+Remove the message box 'success!' in the lower right corner.
+Reduce the size of gif for example in README.
 
-## [Unreleased]
+## 1.0.2
 
-- Initial release
+Fix bug: Can't lower the level of head which includes reserved characters in markdown: [ ]() { } . \* + ? ^ \$ \ |.
+
+## 1.0.1
+
+Update README.
+
+## 1.0.0
+
+Initial release.

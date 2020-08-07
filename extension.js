@@ -89,7 +89,7 @@ function activate(context) {
 		});
 
 		// Display a message box to the user
-		vscode.window.showInformationMessage('success!');
+		// vscode.window.showInformationMessage('success!');
 	});
 
 	context.subscriptions.push(disposable);
